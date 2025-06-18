@@ -1,0 +1,390 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1a3e5c;
+  --secondary-color: #3ca877;
+  --light-bg: #f8f9fa;
+  --text-color: #333;
+  --accent-color: #e2e6ea;
+  --font: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-color);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.main-header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.dishdash {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+
+.main-nav a:hover {
+  background: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.search-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#search-input {
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#search-button {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background: #329965;
+}
+
+/* Hamburger */
+.hamburger {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  display: none;
+}
+
+/* Hero */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--light-bg);
+  padding: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button.secondary {
+  background: var(--primary-color);
+}
+
+.cta-button:hover {
+  background: #2d7f5b;
+}
+
+/* Sections */
+.features-section,
+.products-preview-section,
+.about-section,
+.testimonials-section,
+.contact-cta-section {
+  padding: 3rem 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.features-grid,
+.products-grid,
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.features-grid,
+.products-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.testimonials-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.feature-item,
+.product-card,
+.testimonial-item {
+  background: var(--light-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: auto;
+}
+
+.drilling-service-promo {
+  background: linear-gradient(to right, #edf7f3, #f4fbf8);
+  padding: 3rem 1rem;
+  border-top: 4px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.drilling-promo-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.drilling-image-placeholder img {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.drilling-promo-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.drilling-promo-text h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.drilling-promo-text p {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Footer */
+.main-footer {
+  background: var(--primary-color);
+  color: white;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: white;
+  color: var(--primary-color);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--secondary-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Move hamburger to the right */
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .logo-and-hamburger {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .right-section {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .right-section.show {
+    display: flex;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #88b6c9;
+    margin-top: 10px;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .menu-open .main-nav {
+    display: flex;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-container input {
+    width: calc(100% - 90px);
+  }
+
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-image,
+  .hero-content {
+    flex: 1 1 100%;
+  }
+
+  .drilling-promo-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .drilling-promo-text {
+    text-align: center;
+  }
+}

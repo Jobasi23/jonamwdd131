@@ -1,0 +1,145 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.contact-main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-section > p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details {
+  background-color: #f0f8ff;
+  padding: 1.5rem;
+  border-left: 6px solid #007acc;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.contact-details h2 {
+  color: #004080;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-details p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+.contact-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+}
+
+.contact-form button {
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Map Section */
+.map-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.map-section h2 {
+  font-size: 1.75rem;
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section h1 {
+    font-size: 2rem;
+  }
+
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+
+.contact-details {
+        padding: 1rem;
+}
+    
+.contact-form {
+        grid-template-columns: 1fr;
+}
+}

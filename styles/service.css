@@ -1,0 +1,135 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.services-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Hero Section */
+.services-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: linear-gradient(to right, #667f97, #4783aa);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2.5rem 1rem;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  min-height: 220px;
+  background-image: url("../images/mh.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.hero-content {
+  flex: 2 1 400px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* Service List */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  place-self: center;
+}
+
+.service-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.service-item h2 {
+  font-size: 1.4rem;
+  color: #4583a1;
+  margin-bottom: 0.75rem;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #0e0d0d;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  background: #4583a1;
+  color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+}
+
+.cta-section a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cta-section a:hover {
+  color: #cce6ff;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .services-hero {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
